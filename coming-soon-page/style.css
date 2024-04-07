@@ -46,6 +46,10 @@ body > .container {
     margin: 0 auto;
 }
 
+.youtube iframe {
+  border-radius: 2rem;
+}
+
 .blur-load {
     background-size: cover;
     background-position: center;
@@ -86,10 +90,10 @@ body > .container {
 
 @keyframes rotateHue {
     0% {
-        filter: hue-rotate(0deg);
+        backdrop-filter: blur(2px) hue-rotate(0deg);
     }
     100% {
-        filter: hue-rotate(360deg);
+        backdrop-filter: blur(2px) hue-rotate(360deg);
     }
 }
 
@@ -109,5 +113,6 @@ body > .container {
     .youtube {
         width: 90vw;
         height: 50vh;
+        margin: 0 auto;
     }
 }
