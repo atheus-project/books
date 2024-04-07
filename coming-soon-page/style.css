@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes');
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +14,9 @@
 .wrapper {
     width: 100vw;
     height: 100vh;
+    z-index: 10;
+    position: absolute;
+    backdrop-filter: blur(2px);
 }
 
 .container {
@@ -13,14 +24,49 @@
     text-align: center;
 }
 
-h1 {
+.main-title {
     color: white;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-variant: small-caps;
+    font-size: 4em;
+    margin-bottom: 1rem;
 }
 
-iframe {
+.youtube {
     width: 60vw;
     height: 33.75vw;
 }
+
+.blur-load {
+    background-size: cover;
+    background-position: center;
+}
+.blur-load.loaded > img {
+    opacity: 1;
+}
+.blur-load > img {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+.blur-load::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    animation: pulse 1.5s infinite;
+  }
+  .blur-load.loaded::before {
+    content: none;
+    animation: none;
+  }
+
+
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(255, 255, 255, 0.0);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+  }
