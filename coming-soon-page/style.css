@@ -41,6 +41,7 @@ body > .container {
     width: 60vw;
     height: 33.75vw;
     border-radius: 2rem;
+    margin: 0 auto;
 }
 
 .blur-load {

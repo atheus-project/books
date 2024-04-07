@@ -10,7 +10,6 @@
         <meta content="https://books.atheus.dk/" property="og:url" />
         <meta content="https://books.atheus.dk/images/books_flaticon.png" property="og:image" />
         <meta content="#4843b5" data-react-helmet="true" name="theme-color" />
-        <script src="./main.js"></script>
         <!-- Book icons created by Smashicons - Flaticon 
              https://www.flaticon.com/free-icons/book -->
         <link rel="icon" type="image/x-icon" href="./images/books_flaticon.ico">
@@ -31,7 +30,10 @@
         <div class="wrapper">
             <div class="container">
                 <h1 class="great-vibes-regular main-title">Under construction</h1>
-                <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/NluYVdbJP6I?si=tw0jAMnxu0xLSolm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="youtube" id="player">
+                    <!-- Fallback default YouTube player (if the iframe api fails) -->
+                    <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/NluYVdbJP6I?si=tw0jAMnxu0xLSolm" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </body>
