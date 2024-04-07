@@ -18,6 +18,7 @@
     position: absolute;
     backdrop-filter: blur(2px);
     background: radial-gradient(#fff0 20%, #000c) 100%;
+    animation: rotateHue 30s infinite ease-in-out;
 }
 
 .container {
@@ -35,6 +36,7 @@ body > .container {
     margin-bottom: 1rem;
     box-sizing: border-box;
     padding-top: 1.5rem;
+    user-select: none;
 }
 
 .youtube {
@@ -80,7 +82,16 @@ body > .container {
     100% {
         background-color: rgba(255, 255, 255, 0);
     }
-  }
+}
+
+@keyframes rotateHue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .wrapper {
