@@ -1,14 +1,12 @@
-/* https://stackoverflow.com/a/60138011 */
-// Check if API exists
-if (document && document.fonts) {    
-    // Do not block page loading
-    setTimeout(function () {           
-        document.fonts.load('16px "Young Serif"').then(() => {
-        // Make font using elements visible
-        document.querySelector('body').style.display = 'flex';
-        })
-    }, 0)
-    } else {
-    // Fallback if API does not exist 
-    document.querySelector('body').style.display = 'flex';
-}
+window.addEventListener('load', () => {
+    /* Ali Asian - https://www.youtube.com/watch?v=KIE3th7lWxI */
+    const blurDivs = document.querySelectorAll(".blur-load");
+
+    blurDivs.forEach(div => {
+        const img = div.querySelector("img");
+        const loaded = () => div.classList.add("loaded");
+    
+        if (img.complete) loaded();
+        else img.addEventListener("load", loaded);
+    });
+});
