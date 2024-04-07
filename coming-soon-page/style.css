@@ -17,6 +17,7 @@
     z-index: 10;
     position: absolute;
     backdrop-filter: blur(2px);
+    background: radial-gradient(#fff0 20%, #000c) 100%;
 }
 
 .container {
@@ -24,15 +25,22 @@
     text-align: center;
 }
 
+body > .container {
+    filter: drop-shadow(20px 20px 4px #0000005e);
+}
+
 .main-title {
     color: white;
     font-size: 4rem;
     margin-bottom: 1rem;
+    box-sizing: border-box;
+    padding-top: 1.5rem;
 }
 
 .youtube {
     width: 60vw;
     height: 33.75vw;
+    border-radius: 2rem;
 }
 
 .blur-load {
