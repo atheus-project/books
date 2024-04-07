@@ -83,22 +83,15 @@ body > .container {
 
 @media only screen and (max-width: 600px) {
     .wrapper {
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        position: absolute;
-        backdrop-filter: blur(2px);
+        background: radial-gradient(#fff0 00%, #000c) 100%;
     }
-    
+
     .container {
         margin: 15vh auto;
-        text-align: center;
     }
     
     .main-title {
-        color: white;
         font-size: 3rem;
-        margin-bottom: 1rem;
     }
     
     .youtube {
