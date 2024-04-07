@@ -18,6 +18,7 @@
     position: absolute;
     backdrop-filter: blur(2px);
     background: radial-gradient(#fff0 20%, #000c) 100%;
+    animation: rotateHue 30s infinite ease-in-out;
 }
 
 .container {
@@ -35,12 +36,18 @@ body > .container {
     margin-bottom: 1rem;
     box-sizing: border-box;
     padding-top: 1.5rem;
+    user-select: none;
 }
 
 .youtube {
     width: 60vw;
     height: 33.75vw;
     border-radius: 2rem;
+    margin: 0 auto;
+}
+
+.youtube iframe {
+  border-radius: 2rem;
 }
 
 .blur-load {
@@ -79,7 +86,16 @@ body > .container {
     100% {
         background-color: rgba(255, 255, 255, 0);
     }
-  }
+}
+
+@keyframes rotateHue {
+    0% {
+        backdrop-filter: blur(2px) hue-rotate(0deg);
+    }
+    100% {
+        backdrop-filter: blur(2px) hue-rotate(360deg);
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .wrapper {
@@ -97,5 +113,6 @@ body > .container {
     .youtube {
         width: 90vw;
         height: 50vh;
+        margin: 0 auto;
     }
 }
