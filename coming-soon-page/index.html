@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html style="background: radial-gradient(#0c2c55, #09122d); background-size: cover; width: 100vw; height: 100vh;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Books (Goodreads)</title>
+        <!-- Script found at https://stackoverflow.com/a/60138011 -->
+        <script>
+            // Check if API exists
+            if (document && document.fonts) {    
+                // Do not block page loading
+                setTimeout(function () {           
+                    document.fonts.load('16px "Young Serif"').then(() => {
+                    // Make font using elements visible
+                    document.querySelector('body').style.display = 'flex';
+                    })
+                }, 0)
+                } else {
+                // Fallback if API does not exist 
+                document.querySelector('body').style.display = 'flex';
+            }
+        </script>
+        <script src="./main.js"></script>
+        <!-- Book icons created by Smashicons - Flaticon 
+             https://www.flaticon.com/free-icons/book -->
+        <link rel="icon" type="image/x-icon" href="./images/books_flaticon.ico">
+        <!-- Galaxy background by Stack Findover @ Codepen
+             https://codepen.io/stack-findover/pen/eYWPwPV -->
+        <link rel="stylesheet" type="text/css" href="./galaxy.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body style="display: none;">
+        <div class="bg"></div>
+        <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="great-vibes-regular main-title">Under construction</h1>
+                <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/NluYVdbJP6I?si=tw0jAMnxu0xLSolm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </body>
+</html>

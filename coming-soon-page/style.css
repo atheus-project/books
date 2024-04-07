@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes');
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+}
+
+.container {
+    margin: 10vh auto;
+    text-align: center;
+}
+
+.main-title {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 1rem;
+}
+
+.youtube {
+    width: 60vw;
+    height: 33.75vw;
+}
