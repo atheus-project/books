@@ -1,10 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html style="background: radial-gradient(#0c2c55, #09122d); background-size: cover; width: 100vw; height: 100vh;">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Books (Goodreads)</title>
+        <!-- Script found at https://stackoverflow.com/a/60138011 -->
+        <script>
+            // Check if API exists
+            if (document && document.fonts) {    
+                // Do not block page loading
+                setTimeout(function () {           
+                    document.fonts.load('16px "Young Serif"').then(() => {
+                    // Make font using elements visible
+                    document.querySelector('body').style.display = 'flex';
+                    })
+                }, 0)
+                } else {
+                // Fallback if API does not exist 
+                document.querySelector('body').style.display = 'flex';
+            }
+        </script>
+        <script src="./main.js"></script>
         <!-- Book icons created by Smashicons - Flaticon 
              https://www.flaticon.com/free-icons/book -->
         <link rel="icon" type="image/x-icon" href="./images/books_flaticon.ico">
@@ -12,7 +29,6 @@
              https://codepen.io/stack-findover/pen/eYWPwPV -->
         <link rel="stylesheet" type="text/css" href="./galaxy.css" />
         <link rel="stylesheet" type="text/css" href="./style.css" />
-        <script src="./main.js"></script>
     </head>
     <body>
         <div class="blur-load bg" style="background-image: url(./images/galaxy-small.jpg); background-size: cover;">
