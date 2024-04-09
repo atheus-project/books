@@ -18,6 +18,9 @@
     position: absolute;
     backdrop-filter: blur(2px);
     background: radial-gradient(#fff0 20%, #000c) 100%;
+}
+
+.hue-rotate {
     animation: rotateHue 30s infinite ease-in-out;
 }
 
