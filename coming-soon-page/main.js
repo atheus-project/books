@@ -42,16 +42,12 @@ window.addEventListener('load', () => {
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
       //    the player should play for six seconds and then stop.
-      var done = false;
       function onPlayerStateChange(event) {
-        console.log("State change");
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
+        console.log("YouTube Player state change");
+        if (event.data == YT.PlayerState.PLAYING) {
+          document.querySelector(".wrapper").classList.add("hue-rotate");
+        } else {
+          document.querySelector(".wrapper").classList.remove("hue-rotate");
         }
       }
-      function stopVideo() {
-        player.stopVideo();
-      }
-
 });
