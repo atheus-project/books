@@ -1,4 +1,4 @@
-.bg {
+.bg-image {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -6,7 +6,7 @@
     left: 0;
     z-index: -3;
 }
-.bg:before {
+.bg-image:before {
     content: "";
     width: 100%;
     height: 100%;
