@@ -29,6 +29,10 @@
     text-align: center;
 }
 
+body {
+    overflow: hidden;
+}
+
 body > .container {
     filter: drop-shadow(20px 20px 4px #0000005e);
 }
