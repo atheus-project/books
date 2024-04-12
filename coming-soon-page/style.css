@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -24,16 +28,9 @@
     animation: rotateHue 30s infinite ease-in-out;
 }
 
-.container {
+.content {
     margin: 10vh auto;
     text-align: center;
-}
-
-body {
-    overflow: hidden;
-}
-
-body > .container {
     filter: drop-shadow(20px 20px 4px #0000005e);
 }
 
